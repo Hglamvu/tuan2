@@ -4,6 +4,7 @@ package middleware;
 public abstract class Middleware {
 
     private Middleware next;
+    //  thiết lập middleware tiếp theo trong chuỗi và trả về middleware đó
     public Middleware setNextChain(Middleware next){
         this.next = next;
         return next;
